@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --white-color: #ffffff;
   --soft-blue: #E6F2FF;
@@ -14,33 +15,41 @@
   --text-color: #374151;
   --font-color: #1F2937;
 }
+
 body {
   color: var(--text-color);
   word-break: keep-all;
   font-family: "Pretendard", sans-serif;
 }
+
 div{
   margin-bottom:24px;
 }
+
 a{
   text-decoration: none;
   color:var(--blue-color);
 }
+
 h3{
   font-weight:500;
 }
+
 .check a{
   text-decoration: underline;
 }
+
 .login-title{
   display: flex;
   justify-content: center;
   margin-top:60px;
 }
+
 form {
   margin: 40px auto;
   width: 640px;
 }
+
 label {
   color:var(--font-color);
   font-weight: 700;
@@ -49,6 +58,7 @@ label {
   margin-bottom:16px;
   display: block;
 }
+
 input {
   border:none;
   border-radius: 12px;
@@ -61,22 +71,27 @@ input {
   padding: 16px 24px;
   width: 100%;
 }
+
 input::placeholder {
   color: var(--deep-grey);
 }
+
 input:focus {
   outline-color:var(--brand-blue);
 }
+
 .wrapper{
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .visibility_off{
   position: absolute;
   right: 24px;
   cursor: pointer;
 }
+
 button {
   background:var(--deep-grey);
   border: none;
@@ -89,12 +104,15 @@ button {
   width: 100%;
   border-radius: 40px;
 }
+
 #Form:valid button {
   background-color: var(--brand-blue);
 }
+
 #Form:valid button:hover {
   background: var(--deep-blue);
 }
+
 .bottom-bar{
   background-color:var(--soft-blue);
   display: flex;
@@ -112,14 +130,17 @@ button {
   line-height: 24px;
   color:var(--font-color);
 }
+
 .sns-link{
   display: flex;
   gap: 16px;
   margin:0;
 }
+
 .check{
   text-align: center;
 }
+
 .check h3{
   font-weight:500;
   color:var(--font-color);
