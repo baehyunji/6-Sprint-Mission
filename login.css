@@ -150,6 +150,10 @@ h3.check{
   color:var(--font-color);
 }
 
+.login-title img{
+ width:396px;
+}
+
 /* Mobile */
 @media (min-width:375px) and (max-width: 767px) {
  .login-title{
@@ -157,7 +161,6 @@ h3.check{
  }
 
  .login-title img{
-  width:100%;
   max-width:198px;
  }
 
