@@ -237,6 +237,10 @@ button {
   line-height: 44.8px;
 }
 
+.info h1 br{
+  display:none;
+}
+
 .img-description{
   font-size:18px;
   line-height:25.2px;
@@ -299,6 +303,10 @@ button {
 
   .info{
     margin-bottom:64px;
+  }
+
+  .info h1 br{
+    display:none;
   }
 
   .main-img {
