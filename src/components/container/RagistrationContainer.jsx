@@ -24,7 +24,6 @@ function RagistrationContainer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
 
     setValues({
       imageFile: null,

@@ -6,10 +6,29 @@
   margin-bottom: 16px;
 }
 
-.best_description {
-  display: inline-block;
-  width: 180px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.best_name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.71px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.price {
+  font-weight: 700;
+  line-height: 19.09px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.best_name,
+.price {
+  color: #1f2937;
+}
+
+.favorite {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.32px;
+  color: #4b5563;
 }

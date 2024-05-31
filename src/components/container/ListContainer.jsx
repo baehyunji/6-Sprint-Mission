@@ -10,7 +10,7 @@ function ListContainer() {
 
   const sortedProducts = products.sort((a, b) => b[order] - a[order]);
 
-  const handleLoad = async () => {
+  const loadList = async () => {
     try {
       const { list } = await getProducts();
       setProducts(list);
@@ -25,7 +25,7 @@ function ListContainer() {
   };
 
   useEffect(() => {
-    handleLoad();
+    loadList();
   }, [order]);
 
   useEffect(() => {
@@ -42,6 +42,7 @@ function ListContainer() {
       setOrder("favoriteCount");
     }
   };
+
   return (
     <ProductListContainer
       favoriteProducts={favoriteProducts}

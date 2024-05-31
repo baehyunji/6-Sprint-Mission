@@ -1,8 +1,21 @@
-h2 {
+.search_container h2 {
   font-size: 20px;
   line-height: 28px;
   margin-top: 6px;
   margin-bottom: 6px;
+  color: #1f2937;
+}
+
+.search_container h2,
+.best_product {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.best_product {
+  color: #111827;
+  margin-top: 24px;
 }
 
 .search_bar {
@@ -35,10 +48,6 @@ h2 {
 
 .search_bar__form input:focus {
   outline: none;
-}
-
-h2.best_product {
-  margin-top: 24px;
 }
 
 .search_bar_wrapper {
