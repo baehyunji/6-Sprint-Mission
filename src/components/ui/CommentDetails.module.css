@@ -1,0 +1,109 @@
+.commentWrapper {
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+.commentWrapper h2 {
+  font-weight: 600;
+  line-height: 19.09px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.commentWrapper input {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 16px 24px 16px 24px;
+  width: 100%;
+  min-height: 104px;
+  background-color: #f3f4f6;
+}
+
+.buttonWrapper {
+  text-align: right;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.disabledButton {
+  background-color: #9ca3af;
+  color: #ffffff;
+  cursor: default;
+  padding: 12px 20px 12px 20px;
+  height: 42px;
+  width: 88px;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 19.09px;
+}
+
+form:valid .disabledButton {
+  background-color: #3692ff;
+  cursor: pointer;
+}
+
+.content {
+  line-height: 22.4px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.contentWrapper {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 40px;
+}
+
+.comment img {
+  width: 40px;
+  height: 40px;
+}
+
+.commentContent {
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.nickname {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16.71px;
+  color: #4b5563;
+}
+
+.updatedAt {
+  font-size: 12px;
+  line-height: 14.32px;
+  margin: 0;
+  margin-bottom: 29px;
+  color: #9ca3af;
+}
+
+.goBackButton {
+  width: 240px;
+  height: 48px;
+  border-radius: 40px;
+  padding: 0;
+  background-color: #3692ff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 71px 12px 71px;
+  margin: 0 auto 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+.goBackButton span {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.backIcon {
+  margin-left: 10px;
+}
