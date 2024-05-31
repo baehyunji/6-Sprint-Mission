@@ -1,0 +1,15 @@
+.productImg {
+  max-width: 100%;
+  width: 282px;
+  height: 282px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.description {
+  display: inline-block;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

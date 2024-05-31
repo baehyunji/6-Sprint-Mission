@@ -1,38 +1,17 @@
-import { useState } from "react";
 import FileInput from "./FileInput";
-import "./ProductRagistrationForm.css";
+import styles from "./RagistrationForm.module.css";
 
-function ProductRagistrationForm() {
-  const [values, setValues] = useState({
-    imageFile: null,
-    productName: "",
-    productDescription: "",
-    productPrice: "",
-    productTag: "",
-  });
-
-  const handleChange = (name, value) => {
-    setValues((prevValues) => ({
-      ...prevValues,
-      [name]: value,
-    }));
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    handleChange(name, value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(values);
-  };
-
+function ProductRagistrationForm({
+  values,
+  handleChange,
+  handleInputChange,
+  handleSubmit,
+}) {
   return (
-    <form className="product-ragistration-form" onSubmit={handleSubmit}>
-      <div className="product-ragistration-form-wrapper">
+    <form className={styles.product_ragistration_form} onSubmit={handleSubmit}>
+      <div className={styles.product_ragistration_form_wrapper}>
         <h1>상품등록하기</h1>
-        <button className="product-ragistration-form__button" type="submit">
+        <button className={styles.disabledButton} type="submit">
           등록
         </button>
       </div>
@@ -51,6 +30,7 @@ function ProductRagistrationForm() {
         type="text"
         placeholder="상품명을 입력해주세요"
         required
+        autoComplete="off"
       ></input>
       <label htmlFor="product-description">상품 소개</label>
       <textarea
@@ -60,6 +40,7 @@ function ProductRagistrationForm() {
         id="product-description"
         placeholder="상품 소개를 입력해주세요"
         required
+        autoComplete="off"
       ></textarea>
       <label htmlFor="product-price">판매가격</label>
       <input
@@ -71,6 +52,7 @@ function ProductRagistrationForm() {
         placeholder="판매 가격을 입력해주세요"
         min="0"
         required
+        autoComplete="off"
       ></input>
       <label htmlFor="product-tag">태그</label>
       <input
@@ -81,7 +63,14 @@ function ProductRagistrationForm() {
         type="text"
         placeholder="태그를 입력해주세요"
         required
+        autoComplete="off"
       ></input>
+      {values.productTag && (
+        <p className={styles.tag}>
+          {values.productTag}
+          <button className={styles.delete_button}>X</button>
+        </p>
+      )}
     </form>
   );
 }

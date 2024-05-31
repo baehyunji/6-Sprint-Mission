@@ -1,13 +1,14 @@
-import "./ProductsList.css";
-import ProductsListItem from "./ProductsListItem";
+import styles from "./ProductsList.module.css";
+import "./global.css";
+import Product from "./Product";
 
 function ProductsList({ products }) {
   return (
-    <ul className="Products-list">
+    <ul className={styles.ProductsList}>
       {products.map((product) => {
         return (
           <li key={product.id}>
-            <ProductsListItem product={product} />
+            <Product product={product} />
           </li>
         );
       })}

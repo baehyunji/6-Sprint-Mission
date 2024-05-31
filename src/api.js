@@ -1,8 +1,11 @@
+import axios from "axios";
+
+const instance = axios.create({
+  baseURL: "https://panda-market-api.vercel.app",
+  timeout: 3000,
+});
+
 export async function getProducts() {
-  const response = await fetch("https://panda-market-api.vercel.app/products/");
-  if (!response.ok) {
-    throw new Error("데이터를 불러오는데 실패했습니다");
-  }
-  const body = await response.json();
-  return body;
+  const res = await instance.get("/products/");
+  return res.data;
 }

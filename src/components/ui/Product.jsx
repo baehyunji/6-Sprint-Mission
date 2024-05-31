@@ -1,16 +1,16 @@
-import "./ProductsListItem.css";
-import favoriteImg from "../assets/favorite.png";
+import styles from "./Product.module.css";
+import favoriteImg from "../../assets/favorite.png";
 
-function ProductsListItem({ product }) {
+function Product({ product }) {
   return (
     <div className="products-list-item">
       <img
-        className="products-list-item__img"
+        className={styles.productImg}
         src={product.images[0]}
         alt={product.name}
       />
       <div>
-        <h3>{product.description}</h3>
+        <h3 className={styles.description}>{product.description}</h3>
         <h2>{product.price}원</h2>
         <div className="favorite-contents">
           <img src={favoriteImg} alt="favorite-img" />
@@ -21,4 +21,4 @@ function ProductsListItem({ product }) {
   );
 }
 
-export default ProductsListItem;
+export default Product;
