@@ -5,7 +5,19 @@ const instance = axios.create({
   timeout: 3000,
 });
 
-export async function getProducts() {
-  const res = await instance.get("/products/");
+export async function getProducts(params = {}) {
+  const query = new URLSearchParams(params).toString();
+  const res = await instance.get(`/products?${query}`);
+  return res.data;
+}
+
+export async function getProduct(productId) {
+  const res = await instance.get(`/products/${productId}`);
+  return res.data;
+}
+
+export async function getComment({ productId, params }) {
+  const query = new URLSearchParams(params).toString();
+  const res = await instance.get(`/products/${productId}/comments?${query}`);
   return res.data;
 }
