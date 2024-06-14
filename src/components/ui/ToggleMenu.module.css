@@ -5,7 +5,7 @@
 .iconButton {
   border: 1px solid #ebebeb;
   cursor: pointer;
-  padding: 12px 20px 12px 20px;
+  padding: 12px 30px;
   border-radius: 12px;
   gap: 10px;
   margin: 0;
@@ -17,6 +17,11 @@
 
 .iconText {
   font-size: 16px;
+}
+
+.toggleMenu .iconText {
+  position: relative;
+  left: -15px;
 }
 
 ul.popup {
@@ -58,4 +63,10 @@ button {
 
 .newestBtn {
   border-bottom: 1px solid #e5e7eb;
+}
+
+.iconButton img {
+  position: absolute;
+  right: 12px;
+  height: 7.42px;
 }
