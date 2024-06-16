@@ -1,14 +1,17 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 * {
   box-sizing: border-box;
   word-break: keep-all;
   font-family: "Pretendard";
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2937;
 }
 
 html {
   overflow-y: scroll;
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
 }
 
 body {
@@ -16,8 +19,8 @@ body {
 }
 
 a {
-  color: #494949;
   text-decoration: none;
+  color: #4b5563;
 }
 
 :global(#root) {
@@ -32,4 +35,21 @@ a {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .body {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body {
+    padding: 0 16px;
+  }
 }

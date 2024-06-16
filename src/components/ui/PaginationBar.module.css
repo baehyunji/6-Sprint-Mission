@@ -1,0 +1,24 @@
+.paginationBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 40px;
+  margin-bottom: 113px;
+}
+
+.paginationButton,
+.currentPageButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  padding: 12.5px;
+  border-radius: 40px;
+  font-weight: 600;
+  line-height: 19.09px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12.5px;
+}

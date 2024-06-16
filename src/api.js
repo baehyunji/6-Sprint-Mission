@@ -1,8 +1,23 @@
-export async function getProducts() {
-  const response = await fetch("https://panda-market-api.vercel.app/products/");
-  if (!response.ok) {
-    throw new Error("데이터를 불러오는데 실패했습니다");
-  }
-  const body = await response.json();
-  return body;
+import axios from "axios";
+
+const instance = axios.create({
+  baseURL: "https://panda-market-api.vercel.app",
+  timeout: 3000,
+});
+
+export async function getProducts(params = {}) {
+  const query = new URLSearchParams(params).toString();
+  const res = await instance.get(`/products?${query}`);
+  return res.data;
+}
+
+export async function getProduct(productId) {
+  const res = await instance.get(`/products/${productId}`);
+  return res.data;
+}
+
+export async function getComment({ productId, params }) {
+  const query = new URLSearchParams(params).toString();
+  const res = await instance.get(`/products/${productId}/comments?${query}`);
+  return res.data;
 }

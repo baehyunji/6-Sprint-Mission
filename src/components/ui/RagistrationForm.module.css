@@ -1,0 +1,96 @@
+form.product_ragistration_form {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 0px;
+}
+
+form.product_ragistration_form h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.41px;
+}
+
+textarea {
+  width: 1200px;
+  height: 200px;
+  border: none;
+  padding: 16px 0 16px 24px;
+}
+
+input {
+  background-color: #f3f4f6;
+}
+
+form.product_ragistration_form label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.48px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+form.product_ragistration_form input {
+  gap: 10px;
+  border: none;
+  height: 56px;
+}
+
+.product_ragistration_form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form.product_ragistration_form input,
+textarea {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  margin-bottom: 24px;
+}
+
+.product_ragistration_form_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form.product_ragistration_form:valid .disabledButton {
+  background-color: #3692ff;
+  cursor: pointer;
+}
+
+.disabledButton {
+  background-color: #9ca3af;
+  color: #ffffff;
+  cursor: default;
+  padding: 12px 20px 12px 20px;
+  height: 42px;
+  width: 88px;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 19.09px;
+}
+
+.product_ragistration_form input {
+  padding: 16px 0 16px 24px;
+}
+
+.tag {
+  width: 100px;
+  height: 48px;
+  background-color: #f9fafb;
+  border-radius: 26px;
+  padding: 12px 12px 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete_button {
+  background-color: #9ca3af;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-left: 9px;
+}

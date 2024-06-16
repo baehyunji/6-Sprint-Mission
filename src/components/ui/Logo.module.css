@@ -1,0 +1,11 @@
+/* Tablet size*/
+@media screen and (max-width: 1199px) {
+  .logo {
+  }
+}
+/*Mobile size*/
+@media screen and (max-width: 767px) {
+  .logo {
+    height: 40px;
+  }
+}

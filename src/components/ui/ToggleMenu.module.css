@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.iconText {
+  font-size: 16px;
+}
+
 .toggleMenu .iconText {
   position: relative;
   left: -15px;
@@ -44,8 +48,7 @@ ul.popup li.disabled {
   background-color: #ffffff;
   color: #c4c4c4;
   user-select: none;
-  cursor: default;
-  border: 1px 1px 0px 1px;
+  cursor: pointer;
   height: 42px;
 }
 

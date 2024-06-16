@@ -1,7 +1,7 @@
-import ProductRagistrationForm from "../components/ProductRagistrationForm";
+import RagistrationContainer from "../components/container/RagistrationContainer";
 
 function ProductRagistrationPage() {
-  return <ProductRagistrationForm />;
+  return <RagistrationContainer />;
 }
 
 export default ProductRagistrationPage;
