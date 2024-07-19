@@ -22,6 +22,7 @@ function Nav() {
                     isActive && location.pathname === "/free" ? "#3692ff" : "",
                 };
               }}
+              className={styles.link}
             >
               자유게시판
             </NavLink>
@@ -37,6 +38,7 @@ function Nav() {
                       : "",
                 };
               }}
+              className={styles.link}
             >
               중고마켓
             </NavLink>

@@ -30,6 +30,11 @@
   margin-left: 32px;
 }
 
+.link {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 ul.menu {
   display: flex;
   align-items: center;
