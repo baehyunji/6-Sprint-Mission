@@ -1,9 +1,16 @@
 import "./BestProductsListItem.css";
 import favoriteImg from "../assets/favorite.png";
+import { useNavigate } from "react-router-dom";
 
 function BestProductsListItem({ product }) {
+  const navigate = useNavigate();
+
+  const handleProductClick = () => {
+    navigate(`/items/${product.id}`);
+  };
+
   return (
-    <div className="best-products-list-item">
+    <div className="best-products-list-item" onClick={handleProductClick}>
       <img
         className="best-products-list-item__img"
         src={product.images[0]}
