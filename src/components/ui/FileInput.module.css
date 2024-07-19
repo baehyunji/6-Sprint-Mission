@@ -1,0 +1,59 @@
+.image_upload {
+  display: flex;
+}
+
+.image_upload_frame {
+  width: 282px;
+  height: 315px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+.image_upload_frame_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 99px auto;
+}
+
+.image_upload_frame_wrapper img {
+  width: 48px;
+  height: 48px;
+}
+
+.image_upload_frame_wrapper p {
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+img.image_upload__image {
+  width: 282px;
+  height: 315px;
+  border-radius: 12px;
+  border: 1px;
+}
+
+.image_delete_button {
+  background-color: #3692ff;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.file_input {
+  display: none;
+}
+
+input {
+  background-color: #f3f4f6;
+}
+
+.image_upload__p {
+  color: #9ca3af;
+}

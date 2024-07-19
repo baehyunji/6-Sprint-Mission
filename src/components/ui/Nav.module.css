@@ -1,8 +1,7 @@
 .nav {
   position: relative;
   z-index: 1;
-  padding: 15px 0;
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #dfdfdf;
   width: 100%;
 }
@@ -13,7 +12,7 @@
   justify-content: space-between;
 }
 
-.login__button {
+.loginBtn {
   padding: 12px 23px 12px 23px;
   border-radius: 8px;
   background-color: #3692ff;
@@ -22,10 +21,6 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 19.09px;
-}
-
-.visit__link:focus {
-  color: #3692ff;
 }
 
 .item {
@@ -45,4 +40,11 @@ ul.menu {
 
 ul.menu > li:not(:last-child) {
   margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .item {
+    font-size: 16px;
+    line-height: 19.09px;
+  }
 }

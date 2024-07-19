@@ -1,0 +1,16 @@
+.favorite-contents {
+  display: flex;
+  align-items: center;
+}
+
+.favorite-contents img {
+  height: 16px;
+}
+
+.favorite-contents h3 {
+  margin-left: 4px;
+}
+
+.favorite-contents h3 {
+  color: #4b5563;
+}

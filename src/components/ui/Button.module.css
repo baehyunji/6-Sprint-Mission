@@ -1,0 +1,25 @@
+.button {
+  height: 42px;
+  width: 88px;
+  border-radius: 8px;
+  padding: 12px 23px 12px 23px;
+  gap: 10px;
+  background-color: #3692ff;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.09px;
+  cursor: pointer;
+}
+
+.login {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.productRagistration {
+  width: 133px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
